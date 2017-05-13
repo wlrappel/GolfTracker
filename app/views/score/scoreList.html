@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-xs-12">
+            <p style="padding:20px;"></p>
+            <h2 align=center>List of Scores Under Construction</h2>
+            
+            <p>Search bar here that is binded to score course and date. Clicking on round will take you to the detail page</p>
+            <div class="list-group">
+                <a ng-repeat="round in rounds | limitTo: 10" ui-sref="app.scoreDetail({scoreID : {{round.id}}})" class="list-group-item list-group-item-action">
+                    {{round.course}}  {{round.score}}  {{round.date}}
+                </a>
+            </div>
+            
+            <button class="btn-lg btn-warning">
+                <a ng-click="openAddScore()">Add Score</a>
+            </button>
+        </div>
+    </div>
+</div>

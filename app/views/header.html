@@ -1,0 +1,41 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="app"><img src="images/GolfTrackerLogo.png" height=30 width=41></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active: stateis('app')}"><a ui-sref="app">
+                    <span class="glyphicon glyphicon-home"
+                     aria-hidden="true"></span> Home</a></li>
+                <li ng-class="{active: stateis('app.tourneyList')}"><a ui-sref="app.tourneyList">
+                    <span class="glyphicon glyphicon-tower"
+                     aria-hidden="true"></span> View Tournaments</a></li>
+                <li ng-class="{active: stateis('app.scoreList')}"><a ui-sref="app.scoreList">
+                    <span class="glyphicon glyphicon-list-alt"
+                     aria-hidden="true"></span> View Player Scores</a></li>
+                <li ng-class="{active: stateis('app.scoreAdd')}"><a ng-click="openAddScore()">
+                    <span class="glyphicon glyphicon-pencil"
+                     aria-hidden="true"></span> Add Score</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-if="!loggedIn"><a ng-click="openLogin()">
+                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+                <li ng-if="loggedIn">
+                <a>{{username}}</a>
+                </li>
+                <li ng-if="loggedIn">
+                <a ng-click="logOut()">
+                <span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     

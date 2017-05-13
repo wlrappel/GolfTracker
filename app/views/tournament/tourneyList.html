@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-xs-12">
+            <p style="padding:20px;"></p>
+            <h2 align=center>List of Tournaments Page Under Construction</h2>
+            
+            <h2>Search bar here that is binded to tourney names</h2>
+            <div class="list-group">
+                <a ng-repeat="tourney in tournaments | limitTo: 10" ui-sref="app.tourneyStandings({tourneyID : {{tourney.id}}})" class="list-group-item list-group-item-action">
+                    {{tourney.name}}
+                </a>
+            </div>
+            
+            <button class="btn-lg btn-warning">
+                <a ng-click="openTourneyCreate()">Create New</a>
+            </button>
+        </div>
+    </div>
+</div>

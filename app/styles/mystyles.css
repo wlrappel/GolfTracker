@@ -1,0 +1,54 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AfAfAf;
+}
+.row-footer .footer-links > li > a {
+    color: #000000
+}
+.row-footer .footer-links > li > a:hover {
+    color: #ffffff
+}
+.navbar-inverse {
+  background: #11ad2e;
+  color: #000000;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background: #0f571c;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #0f571c;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #0f571c;
+  color: #ffffff;
+}
+body {
+  align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+.tab-content {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 10px;
+}
+.affix {
+  top: 100px;
+}
